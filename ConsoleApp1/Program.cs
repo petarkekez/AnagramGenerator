@@ -24,7 +24,7 @@ namespace ConsoleApp1
             //}
 
             var rezultati = new List<string>{
-                "petar kekez"
+                ""
             };
 
             var options = new ParallelOptions();
@@ -37,7 +37,7 @@ namespace ConsoleApp1
 
                         int smallWordCount = item.Length > 12 ? 0 : 1;
 
-                        var result = anagram.MultipleWordAnagramWith(item, "", 1);
+                        var result = anagram.MultipleWordAnagramWith(item, "", smallWordCount);
 
                         watch.Stop();
                         //var elapsedMs = watch.Elapsed.;
